@@ -6,6 +6,44 @@
 
 /* ---------- 1. The frame container (index.html) ---------- */
 
+.site-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 16px;
+  margin-top: 24px;
+  border-top: 1px solid #d8dee3;
+  font-size: 13px;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #245579;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-divider {
+  color: #9ca3af;
+}
+
+@media (max-width: 480px) {
+  .site-footer {
+    gap: 8px;
+    font-size: 12px;
+  }
+}
+
+
 body.frameset {
     margin: 0;
     height: 100vh;
